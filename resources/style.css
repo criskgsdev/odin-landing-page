@@ -1,0 +1,15 @@
+@font-face {
+  font-family: roboto;
+  src: url(/resources/fonts/Roboto-Regular.ttf);
+}
+* {
+  background-color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+  font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover {
+  text-decoration: underline;
+}
