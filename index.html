@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="ro-RO">
+  <!-- Inceput HEAD -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cristian Măndoiu | Landing Page</title>
     <link rel="stylesheet" href="/resources/style.css" />
   </head>
-  <header>
-    <div class="line-numbers h-full">
-      <nav>
-        <div class="nav">
-          <a class="logo" href="index.html">
-            <img alt="Odin Logo" src="/resources/logo.svg" />
-          </a>
-        </div>
+  <!-- Sfarsit HEAD -->
+  <body>
+    <div class="header">
+      <div class="nav">
+        <a class="logo" href="index.html">
+          <img alt="Odin Logo" src="/resources/logo.svg" />
+        </a>
+
         <div class="nav-menu">
           <div class="nav-menu-items">
             <a class="nav-all-paths" href="#">All Paths</a>
@@ -21,9 +22,38 @@
             <a class="nav-dashboard" href="#">Dashboard</a>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
-  </header>
+    <section class="main-container">
+      <div class="hero-container">
+        <div class="hero">
+          <h1 class="hero-text">
+            This website is <span class="highlight">awesome</span>
+          </h1>
+          <h2 class="hero-subtext">
+            This website has some subtext that goes here under the main title.
+            It's a smaller font and the color is lower contrast
+          </h2>
+          <a href="#" class="hero-btn">Sign up</a>
+        </div>
+        <div class="hero-img">
+          <img class="hero-odin" src="/resources/hero-img.png" />
+        </div>
+      </div>
+      <section class="info">
+        <h2 class="info-title">
+          Some random <span class="highlight">information.</span>
+        </h2>
+        <div class="info-img">
+          <img src="/resources/logo.svg" />
 
-  <body></body>
+          <img src="/resources/logo.svg" />
+
+          <img src="/resources/logo.svg" />
+
+          <img src="/resources/logo.svg" />
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
