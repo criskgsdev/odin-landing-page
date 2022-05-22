@@ -126,7 +126,7 @@ body {
 .quote-container {
   display: flex;
   background-color: #e5e7eb;
-  border-top: 2px solid #e4e4e4; /*detalii, adauga un border discret pentru o delimitare subtila intre sectiuni, folosindu-se variatii mici de nuanta*/
+  margin-top: 2px solid #e4e4e4;
 }
 .quote-text {
   font-family: roboto-italic;
@@ -139,47 +139,4 @@ body {
   font-size: 25px;
   flex-direction: row-reverse;
   margin-top: 30px;
-}
-.call-to-action {
-  font-family: roboto;
-  background-color: #1f2937;
-  display: flex;
-  color: #f9faf8;
-  justify-items: center;
-  justify-content: center;
-}
-.call-to-action-container {
-  display: flex;
-  background-color: #3882f6;
-
-  border-radius: 12px;
-  margin: 50px;
-  padding: 15px 10px;
-  align-items: center;
-  gap: 110px;
-  padding: 30px 50px;
-}
-.cta-text {
-  font-size: 25px;
-}
-.cta-btn {
-  font-family: roboto;
-  display: flex;
-  border: 3px solid #f9faf8;
-
-  border-radius: 12px; /*pentru margini rotunjite*/
-  color: #f9faf8; /*culoare text*/
-
-  text-decoration: none;
-
-  padding: 10px 25px;
-  font-size: 16px;
-  font-family: roboto;
-  transition-duration: 0.4ms; /*pentru hover*/
-  max-height: fit-content;
-  min-width: fit-content;
-}
-.cta-btn:hover {
-  background-color: #ffffff;
-  color: #3882f6;
 }
