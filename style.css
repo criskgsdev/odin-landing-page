@@ -1,16 +1,16 @@
 /* Definire font-family si sursa font custom*/
 @font-face {
   font-family: roboto;
-  src: url(/resources/fonts/Roboto-Regular.ttf);
+  src: url(resources/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: roboto-bold;
-  src: url(/resources/fonts/Roboto-Bold.ttf);
+  src: url(resources/fonts/Roboto-Bold.ttf);
 }
 @font-face {
   font-family: roboto-italic;
 
-  src: url(/resources/fonts/Roboto-Italic.ttf);
+  src: url(resources/fonts/Roboto-Italic.ttf);
 }
 
 body {
