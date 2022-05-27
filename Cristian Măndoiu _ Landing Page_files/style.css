@@ -1,0 +1,142 @@
+/* Definire font-family si sursa font custom*/
+@font-face {
+  font-family: roboto;
+  src: url(/resources/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(/resources/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: roboto-italic;
+
+  src: url(/resources/fonts/Roboto-Italic.ttf);
+}
+
+body {
+  background-color: #1f2937; /*setare culoare background body*/
+  margin: 0; /* by default erau 8px, no idea why*/
+}
+.nav {
+  display: flex;
+  justify-content: space-between; /*pozitioneaza cele 2 elemente din nav (logo, nav-menu) la inceputul, respectiv sfarsitul container-ului)*/
+  align-items: center; /*fara el, nav-menu-ul ar fi fost afisat in coltul dreapta sus al container-ului*/
+} /*nu am stilizat toata clasa "nav" deoarece am avut nevoie de stilizare individuala pentru a spatia corect fiecare item in parte*/
+.nav-all-paths,
+.nav-community,
+.nav-dashboard,
+.logo {
+  margin: 25px; /*spatiaza itemii atat de marginile documentului cat si unul de altul, in felul asta nu se "incaleca pe rezolutii mai mici"*/
+  text-decoration: none; /*fiind ancore, by default ar fi fost subliniate si nu am vrut asta*/
+  font-family: roboto-bold, Verdana, Geneva, Tahoma, sans-serif; /*trebuie sa ma documentez daca e vreo varianta sa nu mai fie nevoie sa definesc de fiecare data font family-ul, mai ales ca folosesc acelasi font peste tot, @TODO"*/
+  /*setare dimensiune si culoare text, in pixeli, momentan :D*/
+  font-size: 20px;
+  color: #e5e7eb;
+  transition-duration: 0.5ms;
+}
+.nav-menu a:hover {
+  color: #d09348;
+  font-size: 25px;
+}
+
+.main-container {
+  display: block;
+}
+.hero-text {
+  color: #f9faf8;
+  font-size: 48px;
+  font-family: roboto-bold;
+}
+
+.hero-subtext {
+  font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: #e5e7eb;
+}
+
+/*butonul de sign-up din "hero"*/
+.hero-btn {
+  background-color: #3882f6;
+  border-radius: 12px; /*pentru margini rotunjite*/
+  color: #f9faf8; /*culoare text*/
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-family: roboto;
+  transition-duration: 0.4ms; /*pentru hover*/
+  max-width: fit-content; /*ca sa nu ocupe toata latimea containerului*/
+}
+.hero-btn:hover {
+  background-color: #d09348; /*schimbare subtila de nuanta la hover"*/
+}
+.hero-container {
+  display: flex;
+  margin-top: 65px;
+  padding: 35px;
+}
+.hero {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-img img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.info {
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+
+  flex-direction: column;
+  background-color: #ffffff;
+  width: auto;
+}
+.info-img {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.info-img img {
+  border: 5px solid #1f2937;
+  border-radius: 12px;
+  transition-duration: 50 ms;
+  padding: 25px;
+}
+
+.info-img img:hover {
+  background-color: #2c3c51;
+}
+
+.info-title {
+  display: block;
+  font-family: roboto-bold;
+  font-size: 36px;
+  color: #2c3c51;
+}
+.highlight {
+  color: #d09348;
+}
+.quote-container {
+  display: flex;
+  background-color: #e5e7eb;
+  margin-top: 2px solid #e4e4e4;
+}
+.quote-text {
+  font-family: roboto-italic;
+  font-size: 36px;
+  padding: 75px;
+}
+.cite {
+  display: flex;
+  font-family: roboto;
+  font-size: 25px;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
