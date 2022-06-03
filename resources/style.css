@@ -54,6 +54,7 @@ body {
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
+  margin-right: 25px;
   position: relative;
   border-radius: 6px;
   z-index: 1;
@@ -124,7 +125,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.hero-img img {
+.hero-odin-small {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 20px;
+  height: 80px;
+  width: 66px;
+}
+
+.hero-odin {
+  display: none;
   max-height: 100%;
   max-width: 100%;
   height: auto;
@@ -172,7 +182,7 @@ body {
 }
 .quote-text {
   font-family: roboto-italic;
-  font-size: 15px;
+  font-size: px;
   padding: 75px;
 }
 .cite {
@@ -256,5 +266,11 @@ body {
   }
   .quote-text {
     font-size: 34px;
+  }
+  .hero-odin {
+    display: block;
+  }
+  .hero-odin-small {
+    display: none;
   }
 }
