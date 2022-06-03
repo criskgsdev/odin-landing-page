@@ -17,6 +17,9 @@ body {
   background-color: #1f2937; /*setare culoare background body*/
   margin: 0; /* by default erau 8px, no idea why*/
 }
+.nav-menu {
+  display: none;
+}
 .nav {
   display: flex;
   justify-content: space-between; /*pozitioneaza cele 2 elemente din nav (logo, nav-menu) la inceputul, respectiv sfarsitul container-ului)*/
@@ -34,6 +37,45 @@ body {
   color: #e5e7eb;
   transition-duration: 0.5ms;
 }
+.hamburger {
+  display: block;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 6px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  background-color: #ffffff;
+}
+.hamburger:hover span:nth-child(2) {
+  transform: translateX(10px);
+  background-color: #d09348;
+}
+.hamburger.is-active span:nth-child(1) {
+  transform: translate(0px, -2px) rotate(45deg);
+}
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+  transform: translate(15px);
+}
+.hamburger.is-active span:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+
 .nav-menu a:hover {
   color: #d09348;
   font-size: 25px;
@@ -130,7 +172,7 @@ body {
 }
 .quote-text {
   font-family: roboto-italic;
-  font-size: 36px;
+  font-size: 15px;
   padding: 75px;
 }
 .cite {
@@ -204,4 +246,15 @@ body {
 }
 .footer-links a :hover {
   fill: #f9faf8;
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+  }
+  .quote-text {
+    font-size: 34px;
+  }
 }
